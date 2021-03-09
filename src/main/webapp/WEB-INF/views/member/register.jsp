@@ -60,7 +60,26 @@
 			})
 		}
 	</script>
-	<body>
+<body class="bg-gradient-primary">
+
+<P>  The time on the server is ${serverTime}. </P>
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">welcome.</h1>
+                                    </div>
 		<section id="container">
 			<form action="/member/register" method="post" id="regForm">
 				<div class="form-group has-feedback">
@@ -76,14 +95,27 @@
 					<label class="control-label" for="userName">성명</label>
 					<input class="form-control" type="text" id="userName" name="userName" />
 				</div>
-				
+				<div class="form-group has-feedback">
+					<label class="control-label" for="usercompany">회사명</label>
+					<input class="form-control" type="text" id="usercompany" name="userName" />
+				</div>		
 			</form>
 				<div class="form-group has-feedback">
 					<button class="btn btn-success" type="button" id="submit">회원가입</button>
 					<button class="cencle btn btn-danger" type="button">취소</button>
 				</div>
 		</section>
-		
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>		
 	</body>
 	
 </html>
