@@ -12,15 +12,17 @@
 	   					       , USERZIPCODE
 	   					       , USERADDRESS
 	   					       , USERSPHONE
-	   					       , USERPHONE	)
+	   					       , USERPHONE
+	   					       , EMAIL)
 	                  VALUES(    #{userId} 
 	                 		   , #{userPass}
 	                 		   , #{userName}
-	                 		   , #(userCompany)
-	                 		   , #(userZipcode)
-	                 		   , #(userAddress)
-	                 		   , #(userSphone)
-	                 		   , #(userPhone))
+	                 		   , #{userCompany}
+	                 		   , #{userZipcode}
+	                 		   , #{userAddress}
+	                 		   , #{userSphone}
+	                 		   , #{userPhone}
+	                 		   , #{email})
    
     </insert>
     

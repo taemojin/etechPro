@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 
@@ -42,7 +43,7 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">welcome.</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">어서오세요 ITS 팀입니다.</h1>
                                     </div>
                                     <form class="user">
                                         <div class="form-group">

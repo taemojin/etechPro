@@ -9,45 +9,16 @@ public class MemberVO {
 	private String userId;
 	private String userPass;
 	private String userName;
-	private String usercompany; //사용자 회사
-	private String userzipcode; //회원가입 우편번호
-	private String useraddress; //회원가입 회사 주소 
-	private String usersphone; //회원가입 핸드폰 번호
-	private String userphone; //회원가입 전화번호
-	private String email;
+	private String userCompany;  //회사명
+	private String userZipcode;  //우편번호
+	private String userAddress;  //주소 
+	private String userSphone;   //핸드폰
+	private String userPhone;    //전화번호
+	private String email;        //이메일
 	private Date regDate; 
 	
 	
-	public String getUsercompany() {
-		return usercompany;
-	}
-	public void setUsercompany(String usercompany) {
-		this.usercompany = usercompany;
-	}
-	public String getUserzipcode() {
-		return userzipcode;
-	}
-	public void setUserzipcode(String userzipcode) {
-		this.userzipcode = userzipcode;
-	}
-	public String getUseraddress() {
-		return useraddress;
-	}
-	public void setUseraddress(String useraddress) {
-		this.useraddress = useraddress;
-	}
-	public String getUsersphone() {
-		return usersphone;
-	}
-	public void setUsersphone(String usersphone) {
-		this.usersphone = usersphone;
-	}
-	public String getUserphone() {
-		return userphone;
-	}
-	public void setUserphone(String userphone) {
-		this.userphone = userphone;
-	}
+
 	public String getUserId() {
 		return userId;
 	}
@@ -66,6 +37,42 @@ public class MemberVO {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	public String getUserCompany() {
+		return userCompany;
+	}
+	public void setUserCompany(String userCompany) {
+		this.userCompany = userCompany;
+	}
+	public String getUserZipcode() {
+		return userZipcode;
+	}
+	public void setUserZipcode(String userZipcode) {
+		this.userZipcode = userZipcode;
+	}
+	public String getUserAddress() {
+		return userAddress;
+	}
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+	public String getUserSphone() {
+		return userSphone;
+	}
+	public void setUserSphone(String userSphone) {
+		this.userSphone = userSphone;
+	}
+	public String getUserPhone() {
+		return userPhone;
+	}
+	public void setUserPhone(String userPhone) {
+		this.userPhone = userPhone;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public Date getRegDate() {
 		return regDate;
 	}
@@ -73,17 +80,18 @@ public class MemberVO {
 		this.regDate = regDate;
 	}
 	
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
 	@Override
 	public String toString() {
-		return "MemberVO [userId=" + userId + ", userPass=" + userPass + ", userName=" + userName + ", regDate="
-				+ regDate + "]";
+		return "MemberVO [userId=" + userId + ""
+				+ ", userPass=" + userPass + ""
+				+ ", userName=" + userName + ""
+				+ ", userCompany=" + userCompany + ""
+				+ ", userZipcode=" + userZipcode + ""
+				+ ", userAddress=" + userAddress + ""
+				+ ", userSphone=" + userSphone + ""
+				+ ", userPhone=" + userPhone + ""		
+				+ ", email=" + email + ""				
+				+ ", regDate="+ regDate + "]";
 	}
 
 }
