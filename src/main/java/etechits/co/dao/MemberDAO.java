@@ -24,6 +24,7 @@ public interface MemberDAO {
 	public int idChk(MemberVO vo) throws Exception;
 	
 	// 비밀번호 변경
-	public int updatePw(MemberVO vo) throws Exception;
+	public void updatePw(MemberVO vo) throws Exception;
+
 	
 }

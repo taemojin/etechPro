@@ -15,7 +15,7 @@
 				url : "/member/findpw",
 				type : "POST",
 				data : {
-					id : $("#id").val(),
+					id : $("#userId").val(),
 					email : $("#email").val()
 				},
 				success : function(result) {
@@ -55,7 +55,7 @@
 			<div>
 				<p>
 					<label>아이디</label>
-					<input class="w3-input" type="text" id="userid" name="userid" placeholder="회원가입한 아이디를 입력하세요" required>
+					<input class="w3-input" type="text" id="userId" name="userId" placeholder="회원가입한 아이디를 입력하세요" required>
 				</p>
 				<p>
 					<label>이메일</label>

@@ -55,4 +55,6 @@
 	</filter-mapping>
 	<!-- 한글 인코딩 End -->
 
+  <distributable/>
+  
 </web-app>

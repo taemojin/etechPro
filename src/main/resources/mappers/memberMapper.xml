@@ -65,7 +65,7 @@
 	
 	<!-- 비밀번호 변경 -->
 	<update id="updatePw" >
-		update member set userpass = #{userpass} where userid = #{userid}
+		update member set userPass = #{userPass} where userId = #{userId}
 	</update>
 </mapper>
 

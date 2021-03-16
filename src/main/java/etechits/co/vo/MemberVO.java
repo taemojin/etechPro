@@ -2,19 +2,23 @@ package etechits.co.vo;
 
 
 import java.util.Date;
+import java.io.Serializable;
 
 
-public class MemberVO {
-
+public class MemberVO implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String userId;
-	private String userPass;
-	private String userName;
-	private String userCompany;  //회사명
-	private String userZipcode;  //우편번호
-	private String userAddress;  //주소 
-	private String userSphone;   //핸드폰
-	private String userPhone;    //전화번호
-	private String email;        //이메일
+	transient private String userPass;
+	transient private String userName;
+	transient private String userCompany;  //회사명
+	transient private String userZipcode;  //우편번호
+	transient private String userAddress;  //주소 
+	transient private String userSphone;   //핸드폰
+	transient private String userPhone;    //전화번호
+	transient private String email;        //이메일
 	private Date regDate; 
 	
 	

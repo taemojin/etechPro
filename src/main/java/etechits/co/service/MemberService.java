@@ -18,9 +18,9 @@ public interface MemberService {
 	
 	public int idChk(MemberVO vo) throws Exception;
 	
-	//이메일발송
+	////메일발송
 	public void sendEmail(MemberVO vo, String div) throws Exception;
 
-	//비밀번호찾기
+	//아이디찾기
 	public void findPw(HttpServletResponse resp, MemberVO vo) throws Exception;
 }

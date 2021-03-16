@@ -19,12 +19,32 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Custom styles for this template-->
     <link href="resources/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
-
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#logoutBtn").on("click", function(){
+			location.href="member/logout";
+		})
+		$("#registerBtn").on("click", function(){
+			location.href="member/register";
+		})
+		
+		
+		
+		$("#memberUpdateBtn").on("click", function(){
+			location.href="member/memberUpdateView";
+		})
+		
+		$("#memberDeleteBtn").on("click", function(){
+			location.href="member/memberDeleteView";
+		})
+		
+	})
+</script>
 <body class="bg-gradient-primary">
 
 <P>  The time on the server is ${serverTime}. </P>
@@ -45,28 +65,32 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">어서오세요 ITS 팀입니다.</h1>
                                     </div>
-                                    <form class="user">
-                                        <div class="form-group">
-                                            <input type="e_id" class="form-control form-control-user"
-                                                id="exampleInputID" aria-describedby="e_id"
-                                                placeholder="Enter ID...">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
-                                            </div>
-                                        </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
-                                        <hr>
-                                    </form>
+   	<form name='homeForm' method="post" action="/member/login">
+		<c:if test="${member == null}">
+			<div>
+				<label for="userId"></label>
+				<input type="text" id="userId" name="userId">
+			</div>
+			<div>
+				<label for="userPass"></label>
+				<input type="password" id="userPass" name="userPass">
+			</div>
+			<div>
+				<button type="submit">로그인</button>
+			</div>
+		</c:if>
+		<c:if test="${member != null }">
+			<div>
+				<p>${member.userId}님 환영 합니다.</p>
+				<button id="memberUpdateBtn" type="button">회원정보수정</button>
+				<button id="memberDeleteBtn" type="button">회원탈퇴</button>
+				<button id="logoutBtn" type="button">로그아웃</button>
+			</div>
+		</c:if>
+		<c:if test="${msg == false}">
+			<p style="color: red;">로그인 실패! 아이디와 비밀번호 확인해주세요.</p>
+		</c:if>
+	</form>
                                     <hr>
                                     <div class="text-center">
                                         <a class="small" href="/member/findpw">Forgot Password?</a>

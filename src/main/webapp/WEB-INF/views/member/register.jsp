@@ -192,12 +192,15 @@
     				<button type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>                               
 				</div>
 				<div class="form-group">
-    				<input class="form-control" style="top: 5px;" placeholder="도로명 주소" name="userAddress" id="userAddress" type="text" readonly="readonly" />
+    				<input class="form-control" style="top: 5px;" placeholder="도로명 주소" name="userAddress" id="userAddress" type="text" />
 				</div>
+				
+				<!-- 
 				<div class="form-group">
     				<input class="form-control" placeholder="상세주소" name="addr3" id="addr3" type="text"  />
 				</div>
-
+				 -->
+				 
 				<div class="form-group has-feedback">
 					<label class="control-label" for="userSphone">핸드폰번호</label>
 					<input class="form-control" type="text" id="userSphone" name="userSphone" />

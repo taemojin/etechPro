@@ -59,7 +59,7 @@ public class MemberDAOImpl implements MemberDAO {
 	
 	//비밀번호변경
 	@Override
-	public int updatePw(MemberVO vo) throws Exception {
-		return sql.update("memberMapper.updatePw", vo);
+	public void updatePw(MemberVO vo) throws Exception {
+		sql.update("memberMapper.updatePw", vo);
 	}
 }
