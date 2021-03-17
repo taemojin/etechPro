@@ -16,6 +16,7 @@ public class MemberVO implements Serializable{
 	transient private String userCompany;  //회사명
 	transient private String userZipcode;  //우편번호
 	transient private String userAddress;  //주소 
+	transient private String userAddr;  //주소 
 	transient private String userSphone;   //핸드폰
 	transient private String userPhone;    //전화번호
 	transient private String email;        //이메일
@@ -59,6 +60,12 @@ public class MemberVO implements Serializable{
 	public void setUserAddress(String userAddress) {
 		this.userAddress = userAddress;
 	}
+	public String getUserAddr() {
+		return userAddr;
+	}
+	public void setUserAddr(String userAddr) {
+		this.userAddr = userAddr;
+	}
 	public String getUserSphone() {
 		return userSphone;
 	}
@@ -92,6 +99,7 @@ public class MemberVO implements Serializable{
 				+ ", userCompany=" + userCompany + ""
 				+ ", userZipcode=" + userZipcode + ""
 				+ ", userAddress=" + userAddress + ""
+				+ ", userAddr=" + userAddr + ""				
 				+ ", userSphone=" + userSphone + ""
 				+ ", userPhone=" + userPhone + ""		
 				+ ", email=" + email + ""				

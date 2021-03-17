@@ -11,6 +11,7 @@
 	   					       , USERCOMPANY
 	   					       , USERZIPCODE
 	   					       , USERADDRESS
+	   					       , USERADDR
 	   					       , USERSPHONE
 	   					       , USERPHONE
 	   					       , EMAIL)
@@ -20,6 +21,7 @@
 	                 		   , #{userCompany}
 	                 		   , #{userZipcode}
 	                 		   , #{userAddress}
+	                 		   , #{userAddr}
 	                 		   , #{userSphone}
 	                 		   , #{userPhone}
 	                 		   , #{email})
