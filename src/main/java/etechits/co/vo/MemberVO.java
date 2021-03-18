@@ -20,6 +20,7 @@ public class MemberVO implements Serializable{
 	transient private String userSphone;   //핸드폰
 	transient private String userPhone;    //전화번호
 	transient private String email;        //이메일
+	transient private String delUser;		// User Del 옵션 적용
 	private Date regDate; 
 	
 	
@@ -84,6 +85,12 @@ public class MemberVO implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public String getDelUser() {
+		return delUser;
+	}
+	public void setDelUser(String delUser) {
+		this.delUser = delUser;
+	}
 	public Date getRegDate() {
 		return regDate;
 	}
@@ -102,7 +109,8 @@ public class MemberVO implements Serializable{
 				+ ", userAddr=" + userAddr + ""				
 				+ ", userSphone=" + userSphone + ""
 				+ ", userPhone=" + userPhone + ""		
-				+ ", email=" + email + ""				
+				+ ", email=" + email + ""	
+				+ ", delUser=" + delUser + ""
 				+ ", regDate="+ regDate + "]";
 	}
 
