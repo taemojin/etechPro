@@ -70,6 +70,7 @@
  			$("#fileNoDel").attr("value", fileNoArry);
  			$("#fileNameDel").attr("value", fileNameArry);
  		}
+ 		
 	</script>
 	<body>
 	

@@ -21,7 +21,7 @@
 							, WRITER
 						  				)
 				  VALUES(	 #{bno}
-				  		   , MP_REPLY_SEQ.NEXTVAL
+				  		   , #{rno}
 				  		   , #{content}
 				  		   , #{writer}	)
 	</insert>

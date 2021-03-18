@@ -1,5 +1,6 @@
 package etechits.co.vo;
 
+
 public class SearchCriteria extends Criteria{
 
 	private String searchType = "";
