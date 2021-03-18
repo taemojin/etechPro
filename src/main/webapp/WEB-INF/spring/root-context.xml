@@ -14,8 +14,9 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 
     <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
-        <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"/>
-        <property name="url" value="jdbc:log4jdbc:mariadb://172.16.80.112:3306/etechdb"/>
+        <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"/> 
+        <!-- <property name="url" value="jdbc:log4jdbc:mariadb://172.16.80.112:3306/etechdb"/>  -->
+        <property name="url" value="jdbc:log4jdbc:mariadb://localhost:3306/etechdb"/>
         <property name="username" value="root"/>
         <property name="password" value="redhat"/>
     </bean>
