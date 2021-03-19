@@ -163,7 +163,7 @@
 					<div class="form-group">
 						<label for="writer" class="col-sm-2 control-label">댓글 작성자</label>
 						<div class="col-sm-10">
-							<input type="text" id="writer" name="writer" class="form-control" />
+							<input type="text" id="writer" name="writer" class="form-control" value="${member.userId}" readonly="readonly"/>
 						</div>
 					</div>
 					
