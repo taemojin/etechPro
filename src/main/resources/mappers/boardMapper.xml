@@ -38,7 +38,7 @@
 		         WHERE 1=1 
 		         	<include refid="search"></include>
 		                      ) MP
-		WHERE (@ROWNUM :=0)=0 BETWEEN #{rowStart} AND #{rowEnd}
+		WHERE (@ROWNUM :=0)=0 BETWEEN #{rowStart} AND #{rowEnd} 
 		ORDER BY BNO DESC
 	</select>
 	
