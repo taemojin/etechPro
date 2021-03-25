@@ -11,6 +11,8 @@ public interface MemberDAO {
 	//로그인
 	public MemberVO login(MemberVO vo) throws Exception;
 	
+	boolean loginCheck(MemberVO vo) throws Exception;
+	
 	// 회원정보 수정
 	public void memberUpdate(MemberVO vo)throws Exception;
 	

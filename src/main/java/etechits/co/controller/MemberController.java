@@ -57,15 +57,18 @@ public class MemberController {
 		}
 		return "redirect:/";
 	}
-	
+
 	// 로그인 post
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	@RequestMapping(value = "/member/login", method = RequestMethod.POST)
 	public String login(MemberVO vo, HttpSession session, RedirectAttributes rttr) throws Exception{
 		logger.info("post login");
 	
 		session.getAttribute("member");
 		MemberVO login = service.login(vo);
+		
+		//boolean idMatch = pwdEncoder.matches(vo.getUserId(), login.getUserId());
 		boolean pwdMatch = pwdEncoder.matches(vo.getUserPass(), login.getUserPass());
+		
 
 		if(login != null && pwdMatch == true) {
 			session.setAttribute("member", login);

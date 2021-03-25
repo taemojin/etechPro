@@ -62,4 +62,16 @@ public class MemberDAOImpl implements MemberDAO {
 	public void updatePw(MemberVO vo) throws Exception {
 		sql.update("memberMapper.updatePw", vo);
 	}
+	
+    //로그인 체크
+    //id가 null이면 false를 리턴하고 값이 있으면 true를 리턴한다.
+    @Override
+    public boolean loginCheck(MemberVO vo) throws Exception{
+        
+        String name = sql.selectOne("member.login_check", vo);
+        
+        //조건식 ? true일때의 값 : false일때의 값
+        return (name==null) ? false : true;
+        
+    }
 }
